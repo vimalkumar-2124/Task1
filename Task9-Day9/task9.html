@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUVI Task9</title>
+</head>
+<body>
+    <!-- Design a contact us form with all fields as required. -->
+    <!-- Write HTML input tags snippet to show default values for all Form elements -->
+    <h3>Contact Form</h3>
+    <form>
+        <label for="fname" name="'firstname">First Name</label><br>
+        <input type="text" name="firstname" value="vimal" placeholder="Your name.."/><br><br>
+        <label for="lname" name="lastname">Last Name</label><br>
+        <input type="text" name="lastname" value="kumar" placeholder="Your last name.."/><br><br>
+        <label for="email">Email</label><br>
+        <input type="email"  value="example@gmail.com" placeholder="Your mail.."/><br><br>
+        <label for="country">Country</label><br>
+        <select name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="america">America</option>
+        </select><br><br>
+        <label for="subject" >Subject</label><br>
+        <textarea name="message" rows="10" cols="30" placeholder="Write your query..."></textarea> 
+    </form>
+    <hr>
+    <br>
+    <!-- Use certain HTML elements to display the following in a HTML page. -->
+    <h3>List</h3>
+    <ul>
+        <li>Programming Language</li>
+            <ul>
+                <li>JavaScript</li>
+                    <ol type="a">
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                    </ol>
+
+                <li>Python</li>
+                    <ol type="a">
+                        <li>Django Framework</li>
+                        <li>Flask Framework</li>
+                    </ol>
+                
+                <li>Java</li>
+                <ol type="a">
+                    <li>Spring</li>
+                    <li>Maven</li>
+                    <li>Hibernate</li>
+                </ol>
+            </ul>
+        <li>Database</li>
+            <ul>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Cansandra</li>
+            </ul>
+    </ul>
+    <hr><br>
+    <!-- Create an element that helps you to open the https://google.com in separate new tab. -->
+    <h3>Link - Anchor tag</h3>
+    <a href="https://google.com" target="_blank">Google</a>
+    <hr><br>
+    <!-- In the form, add two radio buttons with grouping them for employee type(Salaried and own business) -->
+    <h3>Radio Button</h3>
+    <form>
+        <h4>Employee</h4>
+        <input type="radio" name='employeetype' value="Salaried">
+        <label for="Salaried">Salaried</label><br>
+        <input type="radio" name='employeetype' value="Own Business">
+        <label for="own business">Own Business</label><br>
+        
+    </form>
+    <hr><br>
+    <!-- Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png -->
+    <h3>Design Form</h3>
+    <form>
+        <fieldset>
+            <legend><b>Yes! I want to subscribe to <i>Mag-O-Zine</i></b></legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" value="">   
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" value=""><br><br>
+            <label for="address">Address</label>
+            <textarea name="address" rows="2" cols="50">Write your address..</textarea><br><br>
+            <label for="city">City</label>
+            <input type="text" name="city">
+            <label for="state">State</label>
+            <input type="text" name="state">
+            <label for="zip">Zip</label>
+            <input type="text" name="zip"><br><br>
+            <label for="subscribe" name="subscribe">Subscribe for :</label>
+            <input type="checkbox" name="subscribe1" >
+            <label for="subscribe1">1 year ($19.95)</label>
+            <input type="checkbox" name="subscribe2" >
+            <label for="subscribe2">2 years ($35.00)</label><br><br>
+            <label for="zine">Send me more information about:</label><br>
+            <input type="checkbox" name="zine1" >
+            <label for="zine1">Computer-Zine</label><br>
+            <input type="checkbox" name="zine2" >
+            <label for="zine2">Fishing-Zine</label><br>
+            <input type="checkbox" name="zine3" >
+            <label for="zine3">Cat-O-Zine</label><br>
+        </fieldset>
+    </form>
+    <hr><br>
+    <!-- Use the table tag to design given image Click here. -->
+    <h3>Table Tag - Design table</h3>
+
+    <table border="1">
+        <tr>
+            <th colspan="4">Health Chart</th>
+        </tr>
+        <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 Hours After eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+    </table>
+    <hr><br>
+    <!-- In your, HTML page add the below line and Highlight it without using any CSS. -->
+    <h3>Highlight Words without using CSS</h3>
+    <mark>HTML & CSS is awesome</mark>
+    <hr><br>
+    <!-- Create an HTML page, which should contain all types of input elements. -->
+    <h3>All INPUT Elements</h3>
+    
+    <input type="button" value="Click Me"><br><br>
+    <input type="checkbox" >
+    <label for='check'>Checkbox</label><br><br>
+    <input type="color"><br><br>
+    <input type="date"><br><br>
+    <input type="datetime-local"><br><br>
+    <input type="email" value="@gamil.com"><br><br>
+    <input type="file"><br><br>
+    <input type="hidden"><br><br>
+    <input type="image"><br><br>
+    <input type="month"><br><br>
+    <input type="number"><br><br>
+    <input type="password" value="*****"><br><br>
+    <input type="radio">
+    <label for='rad'>Radio</label><br><br>
+    <input type="range"><br><br>
+    <input type="reset"><br><br>
+    <input type="search" value="Search Box"><br><br>
+    <input type="submit"><br><br>
+    <input type="tel" value="Tel Number"><br><br>
+    <input type="text" value="Text box"><br><br>
+    <input type="time"><br><br>
+    <input type="url" value="url"><br><br>
+    <input type="week" value="Week"><br><br>
+
+</body>
+</html>
