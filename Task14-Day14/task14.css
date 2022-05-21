@@ -1,0 +1,60 @@
+input.star {
+    display: none;
+  }
+
+  label.star {
+    float: right;
+
+    padding: 5px;
+
+    font-size: 36px;
+
+    color: #4a148c;
+
+    transition: all 0.2s;
+  }
+
+  input.star:checked ~ label.star:before {
+    content: "\f005";
+
+    color: #fd4;
+
+    transition: all 0.25s;
+  }
+
+  input.star-5:checked ~ label.star:before {
+    color: #fe7;
+  }
+
+  input.star-1:checked ~ label.star:before {
+    color: #f62;
+  }
+
+  label.star:before {
+    content: "\f006";
+
+    font-family: FontAwesome;
+  }
+  .form-check-input {
+    border-width: 3px;
+  }
+  
+  .form-check .form-check-input {
+    float: left;
+    margin-left: 3.5em;
+  }
+
+  .form-check-input {
+    width: 2em;
+    height: 2em;
+  }
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  tr {
+    border-style: none;
+  }
+
+  
