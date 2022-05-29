@@ -1,0 +1,76 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+.nav-bar {
+  height: 60vh;
+  position: relative;
+}
+a {
+  text-decoration: none;
+  color: #b5bdb7 !important;
+}
+a:hover {
+  color: whitesmoke !important;
+}
+.title-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+img {
+  border-radius: 5px;
+  height: 390px;
+}
+
+.learn-more,
+.videos,
+.books {
+  border-radius: 4px;
+}
+.learn-more {
+  border: 1px solid black;
+}
+
+.videos {
+  background-color: rgb(199, 9, 9);
+  color: white;
+}
+
+.books {
+  background-color: rgb(231, 154, 12);
+  color: white;
+}
+.fa-brands {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.quote {
+  height: 90px;
+  position: relative;
+}
+.quote-center {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.vl {
+  height: 115px;
+  border-left: 2px solid rgb(173, 173, 173);
+}
+.box {
+  height: 165px;
+}
+.year {
+  color: #babdba;
+}
+ul {
+  color: #6d706d;
+}
+
+.details-of-award {
+  color: #939693;
+}
