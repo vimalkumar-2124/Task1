@@ -72,7 +72,7 @@ for (let i = 0; i < keys.length; i++) {
     } 
     
     //Delete one element at a time
-    else if (btnVal == "CE") {
+    else if (btnVal == "backspace") {
       input.value = input.value.substring(
         0,
         input.value.length - 1
