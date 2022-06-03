@@ -1,0 +1,28 @@
+body{
+    background-color: #B9B8B8 !important;
+}
+
+.outer-box{
+    position: relative;
+    border:1px solid grey;
+    width:422px;
+    height:458px;
+    background-color: #dadada;
+    border-radius:5px ;
+    box-shadow: 2px 2px 12px black inset;
+    margin:auto;
+    
+}
+
+.inner-box{
+    content: '';
+    position: absolute;
+    border: 1px solid gray;
+    top:30px;
+    left:25px;
+    width:366px;
+    height: 81px;
+    background-color: #b9b9b9;
+    font-size:3em;
+}
+
