@@ -1,0 +1,43 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(49, 47, 47);
+  }
+  .counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+  .counter {
+    display: flex;
+    flex-direction: column-reverse; 
+    text-align: center;
+    font-size: 10em;
+    /* Text Gradient taught by Ragav Kumar - I implemented here😄 */
+    background: linear-gradient(to bottom right, orange, white, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .btn {
+    font-size: 5em;
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    border: 2px solid black;
+  }
+  img{
+      border-radius: 10px;
+      width:fit-content;
+      height: auto;
+      margin: auto;
+  }
+  .wish{
+      font-size: 100px;
+  }
