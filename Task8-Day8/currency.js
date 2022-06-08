@@ -2,7 +2,7 @@
 
 let currReq = new XMLHttpRequest()
 var curr = document.getElementById("curr");
-
+let usd = "USD"
 
 currReq.onreadystatechange = function(){
     if (currReq.status === 200) {
@@ -19,5 +19,5 @@ currReq.onreadystatechange = function(){
 
 
 
-currReq.open('GET','https://restcountries.com/v3.1/currency/dollar')
+currReq.open('GET',`https://restcountries.com/v3.1/currency/${usd}`)
 currReq.send()
