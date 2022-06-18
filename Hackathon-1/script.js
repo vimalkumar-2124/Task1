@@ -10,11 +10,16 @@ const notFound = document.querySelector(".notFound-content");
 
 // To load content
 async function loadContent() {
-  const response = await fetch(`${API}/books`);
-  const data = await response.json();
-  data.forEach((book) => {
-    showContent(book);
-  });
+    try{
+        const response = await fetch(`${API}/books`);
+        const data = await response.json();
+        data.forEach((book) => {
+          showContent(book);
+        });
+    }
+    catch(err){
+        console.log(err.message)
+    }
 }
 
 
@@ -58,29 +63,40 @@ async function showCharacters(id) {
   let btn = document.querySelector(`#show-${id}`);
   btn.setAttribute("style", "display:none;");
   let ul = document.querySelector(`.character-list-${id}`);
-  const response = await fetch(`${API}/books/${id}`);
-  const data = await response.json();
-  // console.log(data)
-  charactersResponse(data.characters, ul);
+  try{
+      const response = await fetch(`${API}/books/${id}`);
+      const data = await response.json();
+      // console.log(data)
+      charactersResponse(data.characters, ul);
+  }
+  catch(err){
+    console.log(err.message)
+  }
 }
 
 async function charactersResponse(char, ul) {
   // console.log(char)
-  let i = 0;
-  let j = 0
-  while (i < 5) {
-   
-    const li = document.createElement("li");
-    const charResponse = await fetch(char[j]);
-    const charData = await charResponse.json();
-    if (charData.name !== "") {
-      console.log(charData.name);
-      li.innerText = charData.name;
-      ul.append(li);
-      i++;
-    }
-    j++
-    
+  try{
+
+      let i = 0;
+      let j = 0
+      while (i < 5) {
+       
+        const li = document.createElement("li");
+        const charResponse = await fetch(char[j]);
+        const charData = await charResponse.json();
+        if (charData.name !== "") {
+        //   console.log(charData.name);
+          li.innerText = charData.name;
+          ul.append(li);
+          i++;
+        }
+        j++
+        
+      }
+  }
+  catch(err){
+    console.log(err.message)
   }
 }
 
