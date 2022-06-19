@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(222, 219, 219);
+}
+
+.joke-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  background: linear-gradient(to bottom right, whitesmoke, rgb(111, 111, 243));
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: darkblue;
+}
+.random,
+.user-joke,
+.count-jokes,
+.multiple,
+.content,
+.multiple-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+h1,
+p {
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.btn-grp {
+  width: 150px;
+}
+.btn-grp:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 30px rgba(135, 63, 173, 0.4);
+}
+
+.form,
+.multiple-form {
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+}

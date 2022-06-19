@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet"/>
+    <title>Chuck Norris Joke</title>
+  </head>
+  <body>
+    <div class="container d-flex flex-column gap-5 align-items-center mt-4">
+      <h1>Chuck Norris API Jokes</h1>
+      <div class="joke-list d-flex flex-column gap-4">
+      </div>
+      <div class="random">
+        <p>Select the button to get Random Jokes</p>
+        <button type="button" class="btn-grp btn bg-primary bg-gradient text-white" onclick="generateJokes()">Random Jokes</button>
+      </div>
+      <div class="user-joke">
+        <div class='form'>
+          <input type='text' placeholder='firstname' required/>
+          <input type='text' placeholder='lastname'/>
+          <button type="button" class="btn bg-success bg-gradient text-white" onclick="usernameJokes()">Submit</button>
+        </div>
+        <div class="content">
+          <p>Select the button to get jokes with Your name</p>
+          <button type="button" class="btn-grp btn bg-primary bg-gradient text-white" onclick="toggleDisplay()">User Name Jokes</button>
+        </div>
+      </div>
+      <div class="count-jokes">
+        <p>Select the button to get the total count of the jokes</p>
+        <button type="button" class="btn-grp btn bg-primary bg-gradient text-white" onclick="count()">Count</button>
+      </div>
+      <div class="multiple">
+        <div class='multiple-form'>
+          <input type='text' placeholder='Number' required/>
+          <button type="submit" class="btn bg-success bg-gradient text-white" onclick="multipleJokes()">Submit</button>
+        </div>
+        <div class="multiple-content">
+          <p>Select the button to get the multiple jokes based on your input count</p>
+          <button type="button" class="btn-grp btn bg-primary bg-gradient text-white mb-3" onclick="toggleDisplay_multiple()">Multiple Jokes</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
