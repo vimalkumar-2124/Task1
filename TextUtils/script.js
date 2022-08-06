@@ -46,6 +46,14 @@ clear.addEventListener('click', () => {
     toRead.innerHTML = ""
 }) 
 
+// Copy text
+// Navigator object contains the info about our browser
+const copy = document.getElementById('copy')
+function copyText() {
+    textarea.select()
+    navigator.clipboard.writeText(textarea.value)
+}
+
 // Theme change
 const navBarToggle = document.getElementById('navBarToggle')
 const heading = document.getElementById('heading')
@@ -56,7 +64,6 @@ function changeTheme() {
     heading.classList.toggle('text-white')
     textarea.classList.toggle('bg-dark')
     textarea.classList.toggle('text-white')
-    
     document.getElementById('card1').classList.toggle('bg-dark')
     document.getElementById('card1').classList.toggle('text-white')
     document.getElementById('card2').classList.toggle('bg-dark')
